@@ -7,14 +7,14 @@ public class CalendarioMes {
     int numDias = 31;
     int diaSemanaNum=0;
     
-    System.out.print("Indique el mes (en minúscula): ");
+    System.out.print("Indique el mes (en min�scula): ");
     mes = System.console().readLine();
     if (mes.equals("febrero")) {
-      System.out.print("¿Es un año bisiteso? (s/n) ");
+      System.out.print("�Es un a�o bisiteso? (s/n) ");
       bisiesto = System.console().readLine().equals("s")?true:false;
     }
     
-    System.out.print("Indique el día de la semana en el que empieza el mes (en minúscula): ");
+    System.out.print("Indique el d�a de la semana en el que empieza el mes (en min�scula): ");
     diaSemana = System.console().readLine();
     
     switch (mes) {
@@ -40,7 +40,7 @@ public class CalendarioMes {
       case "martes":
         diaSemanaNum=1;
         break;
-      case "miércoles":
+      case "mi�rcoles":
         diaSemanaNum=2;
         break;
       case "jueves":
@@ -49,7 +49,7 @@ public class CalendarioMes {
       case "viernes":
         diaSemanaNum=4;
         break;
-      case "sábado":
+      case "s�bado":
         diaSemanaNum=5;
         break;
       case "domingo":
@@ -60,26 +60,26 @@ public class CalendarioMes {
     
     System.out.println();
     
-    System.out.println("┌───┬───┬───┬───┬───┬───┬───┐");
-    System.out.println("│ L │ M │ X │ J │ V │ S │ D │");
+    System.out.println("?????????????????????????????");
+    System.out.println("? L ? M ? X ? J ? V ? S ? D ?");
     
     int diaAPintar=-diaSemanaNum;
     
     while (diaAPintar<numDias) {
-      System.out.println("├───┼───┼───┼───┼───┼───┼───┤");
-      System.out.print("│");
+      System.out.println("?????????????????????????????");
+      System.out.print("?");
       for (int i=0; i<7; i++) {
         diaAPintar++;
         if ((diaAPintar<=0 || diaAPintar>numDias)) {
-          System.out.print("   │");
+          System.out.print("   ?");
         } else {
-          System.out.printf("%2d │",diaAPintar);
+          System.out.printf("%2d ?",diaAPintar);
         }
         
       }
       System.out.println();
     }
-    System.out.println("└───┴───┴───┴───┴───┴───┴───┘");
+    System.out.println("?????????????????????????????");
     
     
   }
