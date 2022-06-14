@@ -23,16 +23,16 @@ public class horarioSemanal{
         System.out.println("Que asignatura quieres saber el horario");
         String deseoUsuario=System.console().readLine();
 
-         
+        System.out.printf("|%-10s |%10s |%10s |%10s |%10s |\n" ,"Lunes","Martes","Miercoles","Jueves","Viernes");
         for(fila = 0; fila < 5; fila++) {
            
             for(columna = 0;columna <5; columna ++){
                 
                 if(deseoUsuario.equals(horas[fila][columna])){
                        
-                    System.out.printf("|%5s",horas[fila][columna]);
+                    System.out.printf("|%10s",horas[fila][columna]);
                 }else{
-                    System.out.printf("|%5s"," X ");
+                    System.out.printf("|%10s"," X ");
                 }
                
             }
