@@ -7,14 +7,14 @@ public class CalendarioMes {
     int numDias = 31;
     int diaSemanaNum=0;
     
-    System.out.print("Indique el mes (en minúscula): ");
+    System.out.print("Indique el mes (en minÃºscula): ");
     mes = System.console().readLine();
     if (mes.equals("febrero")) {
-      System.out.print("¿Es un año bisiteso? (s/n) ");
+      System.out.print("Â¿Es un aÃ±o bisiteso? (s/n) ");
       bisiesto = System.console().readLine().equals("s")?true:false;
     }
     
-    System.out.print("Indique el día de la semana en el que empieza el mes (en minúscula): ");
+    System.out.print("Indique el dÃ­a de la semana en el que empieza el mes (en minÃºscula): ");
     diaSemana = System.console().readLine();
     
     switch (mes) {
@@ -40,7 +40,7 @@ public class CalendarioMes {
       case "martes":
         diaSemanaNum=1;
         break;
-      case "miércoles":
+      case "miÃ©rcoles":
         diaSemanaNum=2;
         break;
       case "jueves":
@@ -49,7 +49,7 @@ public class CalendarioMes {
       case "viernes":
         diaSemanaNum=4;
         break;
-      case "sábado":
+      case "sÃ¡bado":
         diaSemanaNum=5;
         break;
       case "domingo":

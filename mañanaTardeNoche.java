@@ -22,7 +22,7 @@ public class mananaTardeNoche{
 
         }else if (pideHora>=13 && pideHora<=20){
             System.out.println("Buenos Tardes");
-        }else if(pideHora>=21 && pideHora<=5){
+        }else if(pideHora>=21 || pideHora<=5){
             System.out.println("Buenas Noches");
         }
 
